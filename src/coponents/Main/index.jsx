@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from '@/coponents/Main/Main.module.css'
-import { Links } from '@/coponents/Links'
+import { Headline } from '../Headline'
 
 export const Main = (props) => {
     return(
@@ -29,11 +29,7 @@ export const Main = (props) => {
                 </div>
             </div>
 
-            <div className={styles.center}>
-                {props.title}
-            </div>
-
-            <Links />
+            <Headline title={props.title} />
         </main>
     )
 }
