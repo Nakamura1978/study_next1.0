@@ -1,0 +1,12 @@
+.header{
+    width: 100%;
+    height: 4rem;
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.nav{
+    text-align : center;
+    margin : 10px;
+}
