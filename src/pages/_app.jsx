@@ -2,9 +2,11 @@ import Head from 'next/head'
 import '@/styles/globals.css'
 import { Header } from '@/coponents/Header';
 import { useBgColor } from '@/hooks/useBgColor';
+import { useInputToShow } from '@/hooks/useInputToShow';
 
 
 export const App = ({ Component, pageProps }) => {
+  const inputToShow = useInputToShow();
   useBgColor();
 
   return(
@@ -17,7 +19,7 @@ export const App = ({ Component, pageProps }) => {
       
       <Header />
       
-      <Component {...pageProps} />
+      <Component {...pageProps} {...inputToShow} />
     </>
   ) 
 }

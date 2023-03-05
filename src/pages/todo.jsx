@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import { Main } from '@/coponents/Main'
+import { MakeToDo } from '@/coponents/MakeToDo/MakeToDo';
+import styles from "@/coponents/MakeToDo/MakeToDo.module.css"
 
-const ToDo = () => {
+const ToDo = (props) => {
   return (
     <>
       <Head>
@@ -9,6 +11,8 @@ const ToDo = () => {
       </Head>
 
       <Main title="ToDo Page" />
+
+      <MakeToDo {...props} />
     </>
   )
 }
