@@ -1,0 +1,11 @@
+.sliderBox{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imageBox{
+    width: 700px;
+    height: 400px;
+    border: 1px solid red;
+}
