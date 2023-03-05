@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import { Header } from '@/coponents/Header';
 import { useBgColor } from '@/hooks/useBgColor';
 import { useInputToShow } from '@/hooks/useInputToShow';
+import { Footer } from '@/coponents/Footer';
 
 
 export const App = ({ Component, pageProps }) => {
@@ -19,8 +20,12 @@ export const App = ({ Component, pageProps }) => {
       
       <Header />
       <hr />
+
+      
       
       <Component {...pageProps} {...inputToShow} />
+
+      <Footer />
     </>
   ) 
 }
