@@ -1,0 +1,15 @@
+.footer{
+    width: 700px;
+    height: 100px;
+    margin: 10px auto;
+}
+
+.h2{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
