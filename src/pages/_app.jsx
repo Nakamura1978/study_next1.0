@@ -18,6 +18,7 @@ export const App = ({ Component, pageProps }) => {
       </Head>
       
       <Header />
+      <hr />
       
       <Component {...pageProps} {...inputToShow} />
     </>

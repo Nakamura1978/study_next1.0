@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import { Main } from '@/coponents/Main'
-import { Links } from '@/coponents/Links'
+import { Slider } from '@/coponents/Slider'
+import { Art } from '@/coponents/Art'
+
 
 export default function Home() {
   return (
@@ -9,8 +10,10 @@ export default function Home() {
         <title>Create Next App</title>
       </Head>
 
-      <Main title="Index Page" />
-      <Links />
+      <Slider />
+      
+      <Art />
+
     </>
   )
 }
